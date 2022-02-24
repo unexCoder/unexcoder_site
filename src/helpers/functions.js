@@ -10,7 +10,8 @@ const staticCharCell = (start,str,url) => {
         el.style.backgroundColor='black';
         el.innerHTML = null;
         const link = document.createElement('a');
-        link.style.color='#00ff00';
+        link.style.color='#0f0';
+        // link.style.color='#f0f';
         link.setAttribute('href',url);
         link.innerHTML = c;
         el.appendChild(link);
