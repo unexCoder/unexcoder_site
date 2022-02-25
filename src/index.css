@@ -13,6 +13,11 @@ code {
   monospace;
 }
 
+.App {
+  text-align: center;
+  position: fixed;
+}
+
 .cell {
   display:flex;
   flex-direction: row;
