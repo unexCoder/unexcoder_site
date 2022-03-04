@@ -5,7 +5,7 @@ function App() {
 
   return (
     <Router>
-      <div className="container"> 
+      <main className="container"> 
         <div className="App">
         <Routes>
           <Route path='/' element={<Cell/>} />
@@ -24,7 +24,7 @@ function App() {
           )} />
         </Routes>
         </div>  
-      </div> 
+      </main> 
     </Router>
   );
 }
