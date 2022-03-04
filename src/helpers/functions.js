@@ -6,7 +6,7 @@ const staticCharCell = (start,str,url) => {
     [...str].forEach((c,i) => {
         const el = document.getElementById('id'+(start+i));
         el.classList.add('link')
-        el.classList.remove('cell-container')
+        el.classList.remove('cell')
         el.style.backgroundColor='black';
         el.innerHTML = null;
         const link = document.createElement('a');
@@ -19,7 +19,7 @@ const staticCharCell = (start,str,url) => {
   };
 
 const mouseHoverDesktop = (e) => {
-    if(e.target.classList.contains('cell-container')) {
+    if(e.target.classList.contains('cell')) {
         e.target.style.backgroundColor='black';
         e.target.style.opacity='0.5';
         e.target.innerHTML=randomChar();
