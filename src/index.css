@@ -15,34 +15,40 @@ code {
 
 .App {
   text-align: center;
-  position: fixed;
 }
 
-.cell {
+.cell-container {
+  position: fixed;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #3e3d42;
+  /* background-color: #3e3d42; */
+  background-color: #000;
+  align-items: center;
+  justify-content: center;
 }
-
-.cell h1 {
+ 
+.cell-container p {
   margin: 0;
   padding: 0;
-  width: 41px;
-  height: 41px;
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  font-weight: bold;
 } 
 
-.cell-container {
-  color:#ff2851;
+.cell {
+  /* color:#ff2851; */
+  color:#ff00ff;
   background-color: #3e3d42;
-  flex-grow: 1;
   width: auto;
-}
-
-.link  {
-  flex-grow: 1;
+  flex: 0 2 40px;
 }
 
 .link a {
   text-decoration: none;  
+}
+
+.hidden {
+  display: none;
 }

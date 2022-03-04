@@ -7,14 +7,15 @@ const Cell = () => {
 
     const size = useWindowSize();
     const cellW = 40;
-    const numCells = Math.floor((size.width/cellW)*(size.height/cellW));
-
+    const numCells = Math.round((size.width/cellW)*(size.height/cellW));
+    const orientation = size.width > size.height ? true : false;
+    const linkPos = orientation ? [0.14,0.28,0.41] : [0.135,0.45,0.72];
     const url = 'https://www.youtube.com/channel/UCidbtHxEKHMfORrq9c-O6Cw';
     useEffect(() => {
         if(numCells > 0) {
-            staticCharCell(Math.floor(numCells*0.13),'\\unexCoder',url); 
-            staticCharCell(Math.floor(numCells*0.45),'albums_',url); 
-            staticCharCell(Math.floor(numCells*0.66),'*visuals',url); 
+            staticCharCell(Math.floor(numCells*linkPos[0]),'\\unexCoder',url); 
+            staticCharCell(Math.floor(numCells*linkPos[1]),'albums_',url); 
+            staticCharCell(Math.floor(numCells*linkPos[2]),'*visuals',url); 
         }
     },[numCells]);
     
@@ -23,7 +24,7 @@ const Cell = () => {
         const coordX = e.touches[0].pageX;
         const coordY = e.touches[0].pageY;  
         const el = document.elementFromPoint(coordX,coordY);
-        if(el.classList.contains('cell-container')) {
+        if(el.classList.contains('cell')) {
             el.style.backgroundColor='black'
             el.style.opacity='0.5';
             el.innerHTML=randomChar();
@@ -33,14 +34,15 @@ const Cell = () => {
                 el.style.color='green';
             }
         }
-    });
+    },[]);
     // Add event listener using  hook
     useEventListener('touchmove', hoverMobile);
 
     return (
-        <div className="cell">
+        <div className="cell-container">
+            <h1 className='hidden'>\unexCoder Art Web App</h1>
             {[...Array(numCells)].map((x, i) =>
-                <h1 id={'id'+i} key={i} className="cell-container" onMouseMove={(e) => mouseHoverDesktop(e)}>\</h1>
+                <p id={'id'+i} key={i} className="cell" onMouseMove={(e) => mouseHoverDesktop(e)}>\</p>
             )}
         </div>
       );
