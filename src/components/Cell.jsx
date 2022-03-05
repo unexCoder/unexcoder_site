@@ -2,6 +2,7 @@ import { mouseHoverDesktop, staticCharCell, randomChar } from '../helpers/functi
 import { useEffect, useCallback } from 'react';
 import useEventListener from '../hooks/use-event-listener';
 import useWindowSize from '../hooks/use-window-size';
+import { Helmet } from 'react-helmet-async';
 
 const Cell = () => {
 
@@ -40,6 +41,11 @@ const Cell = () => {
 
     return (
         <div className="cell-container">
+            <Helmet>
+                <title>\unexCoder</title>
+                <meta  name='description' content='The official \unexCoder source code repo and web app.'/>
+                <link rel="canonical" href="/" />
+            </Helmet>
             <h1 className='hidden'>\unexCoder Art Web App</h1>
             {[...Array(numCells)].map((x, i) =>
                 <p id={'id'+i} key={i} className="cell" onMouseMove={(e) => mouseHoverDesktop(e)}>\</p>
