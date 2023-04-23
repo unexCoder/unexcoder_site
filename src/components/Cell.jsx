@@ -4,19 +4,24 @@ import useEventListener from '../hooks/use-event-listener';
 import useWindowSize from '../hooks/use-window-size';
 import { Helmet } from 'react-helmet-async';
 
-const Cell = () => {
+const Cell = (props) => {
 
     const size = useWindowSize();
-    const cellW = 40;
+    // const cellW = 40;
+    const cellW = props.cellW;
+    console.log(size);
     const numCells = Math.round((size.width/cellW)*(size.height/cellW));
     const orientation = size.width > size.height ? true : false;
-    const linkPos = orientation ? [0.14,0.28,0.41] : [0.135,0.45,0.72];
-    const url = 'https://www.youtube.com/channel/UCidbtHxEKHMfORrq9c-O6Cw';
+    const linkPos = orientation ? [0.135,0.275,0.405,0.585] : [0.135,0.39,0.6,0.86];
+    const tube = 'https://www.youtube.com/channel/UClEoTMrqLGcBSXn6Jl5KB6A';
+    const bandcamp = 'https://unexcoder.bandcamp.com/';
+    const github = 'https://github.com/unexCoder';
     useEffect(() => {
         if(numCells > 0) {
-            staticCharCell(Math.floor(numCells*linkPos[0]),'\\unexCoder',url); 
-            staticCharCell(Math.floor(numCells*linkPos[1]),'albums_',url); 
-            staticCharCell(Math.floor(numCells*linkPos[2]),'*visuals',url); 
+            staticCharCell(Math.floor(numCells*linkPos[0]),'\\unexCoder','/about'); 
+            staticCharCell(Math.floor(numCells*linkPos[1]),'albums_',bandcamp); 
+            staticCharCell(Math.floor(numCells*linkPos[2]),'a/visuals',tube); 
+            staticCharCell(Math.floor(numCells*linkPos[3]),'*code',github); 
         }
     },[numCells]);
     

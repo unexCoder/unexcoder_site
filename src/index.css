@@ -6,7 +6,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #3e3d42;
+  background-color:#000000;
   overscroll-behavior-y: contain;
   overscroll-behavior-x: contain;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 .cell-container {
-  /* margin-top: 1vh; */
+  background-color: #3e3d42;
   position: fixed;
   display:flex;
   flex-direction: row;
@@ -49,10 +49,36 @@ body {
   display: none;
 }
 
+.content {
+  padding: 2vh;
+  height:100vh;
+  background-color:#000000;
+  opacity:0.75;
+}
+
+.content h1 {
+  margin:0;
+}
+
+.social {
+  display: flex;
+  font-size: 3em;
+  padding: 2vw;
+}
+
+.socialLink {
+  padding: 0 0.5vw;
+  text-decoration: none;
+  color:#ff00ff;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .cell-container {
     margin-top: 1vh;
+  }
+
+  .socialLink {
+    padding: 0 3vw;
   }
 }
