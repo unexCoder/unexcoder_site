@@ -11,8 +11,8 @@ const staticCharCell = (start,str,url) => {
         el.innerHTML = null;
         const link = document.createElement('a');
         link.style.color='#0f0';
-        // link.style.color='#f0f';
         link.setAttribute('href',url);
+        // link.setAttribute('target','_blank');
         link.innerHTML = c;
         el.appendChild(link);
     })

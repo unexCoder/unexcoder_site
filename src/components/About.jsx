@@ -22,11 +22,11 @@ const About = () => {
         que incluyen imágenes generativas que acompañan los sonidos en una danza de 
         abstracción y sinestecia</h1>
         <div className='social'>
-            <Link to='/' className='socialLink'>< FaBandcamp /></Link>
-            <Link to='/' className='socialLink'>< FaYoutube /></Link>
-            <Link to='/' className='socialLink'>< FaInstagram /></Link>
-            <Link to='/' className='socialLink'>< FaTwitter /></Link>
-            <Link to='/' className='socialLink'>< FaFacebook /></Link>
+            <a href="https://unexcoder.bandcamp.com" target="_blank" className='socialLink'><FaBandcamp /></a>
+            <a href="https://www.youtube.com/@unexcoder" target="_blank" className='socialLink'><FaYoutube /></a>
+            <a href="https://www.instagram.com/unexcoder/" target="_blank" className='socialLink'>< FaInstagram /></a>
+            <a href="https://twitter.com/unexCoder" target="_blank" className='socialLink'><FaTwitter /></a>
+            <a href="https://www.facebook.com/unexCoder" target="_blank" className='socialLink'><FaFacebook /></a>
         </div>
     </div>
   );
