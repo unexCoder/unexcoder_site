@@ -3,9 +3,7 @@ import About from './components/About';
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 import { FaBandcamp, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
-
 function App() {
-
   return (
     <Router>
       <main className="container"> 

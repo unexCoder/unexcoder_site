@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App'
 import { HelmetProvider } from 'react-helmet-async';
+import './i18n'
 
 ReactDOM.render(
   <React.StrictMode>

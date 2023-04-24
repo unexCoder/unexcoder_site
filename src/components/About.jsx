@@ -2,8 +2,15 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link} from 'react-router-dom'
 import { FaBandcamp, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+    const lngs = {
+        en: {NativeName: 'EN'},   
+        spa: {NativeName: 'SPA'}
+    }
+
+    const {t,i18n} = useTranslation(); 
 
   return (
     <div className='content'>
@@ -14,13 +21,21 @@ const About = () => {
         </Helmet>
 
         <h1><Link to='/' style={{textDecoration:'none',color:'green',fontSize:'1.5em'}}>\unexCoder</Link></h1>
-        <h1 style={{padding:'2vw', color:'#ff00ff',textAlign:'left'}}>\unexCoder
-        es un proyecto de música electrónica con base en Rosario, ARGENTINA. 
-        \unexCoder explora variadas estéticas del género como IDM, Techno, Ambient,
-        Pop, House y Noise entre otras. La poética del código está en el 
-        sustrato conceptual del proyecto y se manifiesta en performances audiovisuales 
-        que incluyen imágenes generativas que acompañan los sonidos en una danza de 
-        abstracción y sinestecia</h1>
+        <p style={{padding:'2vw', color:'#ff00ff',textAlign:'left', fontSize:'2em', fontWeight:'bold'}}>{t('about')}</p>
+
+        <div style={{padding:'2vw',textAlign:'right'}}>
+            {Object.keys(lngs).map((lng) => (
+                <button className='button' tipe='submit' key={lng} onClick={ () => i18n.changeLanguage(lng)} >{lngs[lng].NativeName}</button>
+            ))}
+        </div>
+
+        <div className='navigate'>             
+            <h1> <Link to='/' style={{textDecoration:'none',color:'#f0f'}}>{t('gallerie')}</Link></h1>
+        </div>        
+        <div className='navigate'> 
+            <h1> <Link to='/' style={{textDecoration:'none',color:'#f0f'}}>{t('tour')}</Link></h1>
+        </div>        
+
         <div className='social'>
             <a href="https://unexcoder.bandcamp.com" target="_blank" className='socialLink'><FaBandcamp /></a>
             <a href="https://www.youtube.com/@unexcoder" target="_blank" className='socialLink'><FaYoutube /></a>

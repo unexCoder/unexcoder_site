@@ -63,13 +63,30 @@ body {
 .social {
   display: flex;
   font-size: 3em;
-  padding: 2vw;
+  padding: 4vw 2vw;
 }
 
 .socialLink {
-  padding: 0 0.5vw;
+  padding: 2vh 0.5vw;
   text-decoration: none;
   color:#ff00ff;
+}
+
+.button {
+  color:#ff00ff;
+  background-color:#000000;
+  border: none;
+  font-size: 1.5em;
+}
+
+button:focus{font-weight:bold;}
+button:hover{cursor:pointer;}
+
+.navigate {
+  color:#ff00ff;
+  font-size: 1em;
+  padding: 1vh 2vw;
+  text-align: left;
 }
 
 @media only screen and (max-width: 768px) {
@@ -79,6 +96,6 @@ body {
   }
 
   .socialLink {
-    padding: 0 3vw;
+    padding: 2vh 3vw;
   }
 }
