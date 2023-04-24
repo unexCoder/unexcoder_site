@@ -18,7 +18,7 @@ const Cell = (props) => {
     const github = 'https://github.com/unexCoder';
     useEffect(() => {
         if(numCells > 0) {
-            staticCharCell(Math.floor(numCells*linkPos[0]),'\\unexCoder','/about'); 
+            staticCharCell(Math.floor(numCells*linkPos[0]),'\\unexCoder','/home'); 
             staticCharCell(Math.floor(numCells*linkPos[1]),'albums_',bandcamp); 
             staticCharCell(Math.floor(numCells*linkPos[2]),'a/visuals',tube); 
             staticCharCell(Math.floor(numCells*linkPos[3]),'*code',github); 
@@ -49,6 +49,7 @@ const Cell = (props) => {
             <Helmet>
                 <title>\unexCoder</title>
                 <meta  name='description' content='The official \unexCoder source code repo and web app.'/>
+                <meta  name='keywords' content='electronic,audiovisual,algorithmic,performance,art,live code,idm,ambient,techno,noise,experimental,\unexCoder,unexcoder,music,generative art,algorithmic art,math art'/>
                 <link rel="canonical" href="/" />
             </Helmet>
             <h1 className='hidden'>\unexCoder Art Web App</h1>

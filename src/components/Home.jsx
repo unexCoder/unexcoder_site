@@ -4,7 +4,7 @@ import { Link} from 'react-router-dom'
 import { FaBandcamp, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
-const About = () => {
+const Home = () => {
     const lngs = {
         en: {NativeName: 'EN'},   
         spa: {NativeName: 'SPA'}
@@ -17,6 +17,7 @@ const About = () => {
         <Helmet>
             <title>\unexCoder</title>
             <meta  name='description' content='The official \unexCoder source code repo and web app.'/>
+            <meta  name='keywords' content='electronic,audiovisual,algorithmic,performance,art,live code,idm,ambient,techno,noise,experimental,\unexCoder,unexcoder,music,generative art,algorithmic art,math art'/>
             <link rel="canonical" href="/" />
         </Helmet>
 
@@ -30,10 +31,8 @@ const About = () => {
         </div>
 
         <div className='navigate'>             
-            <h1> <Link to='/' style={{textDecoration:'none',color:'#f0f'}}>{t('gallerie')}</Link></h1>
-        </div>        
-        <div className='navigate'> 
-            <h1> <Link to='/' style={{textDecoration:'none',color:'#f0f'}}>{t('tour')}</Link></h1>
+            <h2> <Link to='/' style={{fontSize:'1.35em', textDecoration:'none',color:'#f0f'}}>{t('gallerie')}</Link></h2>
+            <h2> <Link to='/' style={{fontSize:'1.35em',textDecoration:'none',color:'#f0f'}}>{t('tour')}</Link></h2>
         </div>        
 
         <div className='social'>
@@ -47,4 +46,4 @@ const About = () => {
   );
 }
 
-export default About;
+export default Home;

@@ -1,7 +1,6 @@
 import Cell from './components/Cell';
-import About from './components/About';
+import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
-import { FaBandcamp, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 function App() {
   return (
@@ -10,15 +9,7 @@ function App() {
         <div className="App">
         <Routes>
           <Route path='/' element={<Cell cellW="40"/>} />
-          <Route path='/home' element={(
-            <div>    
-              <h1><Link to='/' style={{textDecoration:'none',color:'black'}}>\unexCoder Web App</Link></h1>
-              <h2 style={{color:'#ff2851'}} >v.1.0.0</h2>  
-            </div>    
-          )} />
-          <Route path='/about' element={(
-            <About />
-          )} />
+          <Route path='/home' element={( <Home /> )} />
           <Route path='*' element={(
             // <NotFound />
             <div className='content'>    

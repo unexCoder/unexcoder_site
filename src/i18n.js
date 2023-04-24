@@ -10,14 +10,14 @@ i18next
                 translation: {
                     gallerie:'Gallery',
                     tour:'Tour',
-                    about:'\\unexCoder is a proyect de música electrónica con base en Rosario, ARGENTINA. \\unexCoder explora variadas estéticas del género como IDM, Techno, Ambient, Pop, House y Noise entre otras. La poética del código está en el sustrato conceptual del proyecto y se manifiesta en performances audiovisuales que incluyen imágenes generativas que acompañan los sonidos en una danza de abstracción y sinestecia'
+                    about:'\\unexCoder is a composer and computer artist from Argentina. He use programming languages to develops and builds hybrid performance systems that combine live coded algorithms with analog devices and computer generated graphics. His audiovisual pieces push the viewer into a deep abstract volumetric aural and visual experience.'
                 }
             },
             spa: {
                 translation: {
                     gallerie:'Galería',
                     tour:'Fechas',
-                    about:'\\unexCoder es un proyecto de música electrónica con base en Rosario, ARGENTINA. \\unexCoder explora variadas estéticas del género como IDM, Techno, Ambient, Pop, House y Noise entre otras. La poética del código está en el sustrato conceptual del proyecto y se manifiesta en performances audiovisuales que incluyen imágenes generativas que acompañan los sonidos en una danza de abstracción y sinestecia'
+                    about:'\\unexCoder es un compositor y artista informático de Argentina. Utiliza lenguajes de programación para desarrollar y construir sistemas performáticos híbridos que combinan algoritmos y técnicas de "live coding" con dispositivos analógicos y gráficos generados por computadora. Sus piezas audiovisuales empujan al espectador a una profunda experiencia visual y auditiva volumétrica y abstracta.'
                 }
             },
         }
