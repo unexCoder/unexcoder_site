@@ -21,7 +21,7 @@ const About = () => {
         </Helmet>
 
         <h1><Link to='/' style={{textDecoration:'none',color:'green',fontSize:'1.5em'}}>\unexCoder</Link></h1>
-        <p style={{padding:'2vw', color:'#ff00ff',textAlign:'left', fontSize:'2em', fontWeight:'bold'}}>{t('about')}</p>
+        <p style={{margin:'2vh 0', padding:'2vw', color:'#ff00ff',textAlign:'left', fontSize:'2em', fontWeight:'bold'}}>{t('about')}</p>
 
         <div style={{padding:'2vw',textAlign:'right'}}>
             {Object.keys(lngs).map((lng) => (

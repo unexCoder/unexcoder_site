@@ -1,10 +1,8 @@
 import i18next from 'i18next'
 import { initReactI18next } from "react-i18next"
-import { LanguageDetectorModule } from 'i18next'
 
 i18next
     .use(initReactI18next)
-    // .use(LanguageDetectorModule)
     .init({
         fallbackLng:'en',
         resources: {
