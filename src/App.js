@@ -1,5 +1,6 @@
 import Cell from './components/Cell';
 import Home from './components/Home';
+import Gallery from './components/Gallery';
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Cell cellW="40"/>} />
           <Route path='/home' element={( <Home /> )} />
+          <Route path='/gallery' element={( <Gallery /> )} />
+          <Route path='/epk' element={( <div style={{color:'#fff'}}>epk</div> )} />
           <Route path='*' element={(
             // <NotFound />
             <div className='content'>    

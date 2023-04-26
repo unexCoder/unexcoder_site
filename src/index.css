@@ -89,6 +89,17 @@ button:hover{cursor:pointer;}
   text-align: left;
 }
 
+#root {
+  background-color: #000000;
+}
+html {
+  background-color: #000000;
+}
+
+#caption {
+  color:#ff00ff;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .cell-container {

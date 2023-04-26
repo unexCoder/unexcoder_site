@@ -31,7 +31,7 @@ const Home = () => {
         </div>
 
         <div className='navigate'>             
-            <h2> <Link to='/' style={{fontSize:'1.35em', textDecoration:'none',color:'#f0f'}}>{t('gallerie')}</Link></h2>
+            <h2> <Link to='/gallery' style={{fontSize:'1.35em', textDecoration:'none',color:'#f0f'}}>{t('gallerie')}</Link></h2>
             <h2> <Link to='/' style={{fontSize:'1.35em',textDecoration:'none',color:'#f0f'}}>{t('tour')}</Link></h2>
         </div>        
 
