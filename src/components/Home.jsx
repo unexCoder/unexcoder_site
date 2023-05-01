@@ -1,15 +1,10 @@
-import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link} from 'react-router-dom'
 import { FaBandcamp, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import lngs from '../data/lngs';
 
 const Home = () => {
-    const lngs = {
-        en: {NativeName: 'EN'},   
-        spa: {NativeName: 'SPA'}
-    }
-
     const {t,i18n} = useTranslation(); 
 
   return (

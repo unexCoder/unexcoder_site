@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color:#000000;
+  overflow: hidden;
   overscroll-behavior-y: contain;
   overscroll-behavior-x: contain;
 }
@@ -102,6 +103,10 @@ html {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+  body {
+    overflow: auto;
+  }
+  
   .cell-container {
     margin-top: 1vh;
   }

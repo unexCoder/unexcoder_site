@@ -1,20 +1,9 @@
-import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Carousel } from 'react-bootstrap';
+import gallery from '../data/media';
 
 const Gallery = () => {
-    const pics = [
-        {src: 'https://imgs.search.brave.com/lGwtK-HzlPJR1GsNTGRjhj84ithp80mvh0XcygkB4Lw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91aGR3/YWxscGFwZXJzLm9y/Zy91cGxvYWRzL2Nv/bnZlcnRlZC8xOC8x/MC8xNC9jaXR5LWxp/Z2h0cy1ieS1hc3Vz/LXJvZy13YWxscGFw/ZXItMjU2MHgxNDQw/XzU1NzQ0LW1tLTkw/LmpwZw'},
-        {src: 'https://imgs.search.brave.com/lGwtK-HzlPJR1GsNTGRjhj84ithp80mvh0XcygkB4Lw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91aGR3/YWxscGFwZXJzLm9y/Zy91cGxvYWRzL2Nv/bnZlcnRlZC8xOC8x/MC8xNC9jaXR5LWxp/Z2h0cy1ieS1hc3Vz/LXJvZy13YWxscGFw/ZXItMjU2MHgxNDQw/XzU1NzQ0LW1tLTkw/LmpwZw'},
-        {src: 'https://imgs.search.brave.com/lGwtK-HzlPJR1GsNTGRjhj84ithp80mvh0XcygkB4Lw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91aGR3/YWxscGFwZXJzLm9y/Zy91cGxvYWRzL2Nv/bnZlcnRlZC8xOC8x/MC8xNC9jaXR5LWxp/Z2h0cy1ieS1hc3Vz/LXJvZy13YWxscGFw/ZXItMjU2MHgxNDQw/XzU1NzQ0LW1tLTkw/LmpwZw'},
-        {src: 'https://imgs.search.brave.com/lGwtK-HzlPJR1GsNTGRjhj84ithp80mvh0XcygkB4Lw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91aGR3/YWxscGFwZXJzLm9y/Zy91cGxvYWRzL2Nv/bnZlcnRlZC8xOC8x/MC8xNC9jaXR5LWxp/Z2h0cy1ieS1hc3Vz/LXJvZy13YWxscGFw/ZXItMjU2MHgxNDQw/XzU1NzQ0LW1tLTkw/LmpwZw'},
-        {src: 'https://imgs.search.brave.com/lGwtK-HzlPJR1GsNTGRjhj84ithp80mvh0XcygkB4Lw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91aGR3/YWxscGFwZXJzLm9y/Zy91cGxvYWRzL2Nv/bnZlcnRlZC8xOC8x/MC8xNC9jaXR5LWxp/Z2h0cy1ieS1hc3Vz/LXJvZy13YWxscGFw/ZXItMjU2MHgxNDQw/XzU1NzQ0LW1tLTkw/LmpwZw'},
-        {src: 'https://imgs.search.brave.com/lGwtK-HzlPJR1GsNTGRjhj84ithp80mvh0XcygkB4Lw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91aGR3/YWxscGFwZXJzLm9y/Zy91cGxvYWRzL2Nv/bnZlcnRlZC8xOC8x/MC8xNC9jaXR5LWxp/Z2h0cy1ieS1hc3Vz/LXJvZy13YWxscGFw/ZXItMjU2MHgxNDQw/XzU1NzQ0LW1tLTkw/LmpwZw'},
-        {src: 'https://imgs.search.brave.com/lGwtK-HzlPJR1GsNTGRjhj84ithp80mvh0XcygkB4Lw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91aGR3/YWxscGFwZXJzLm9y/Zy91cGxvYWRzL2Nv/bnZlcnRlZC8xOC8x/MC8xNC9jaXR5LWxp/Z2h0cy1ieS1hc3Vz/LXJvZy13YWxscGFw/ZXItMjU2MHgxNDQw/XzU1NzQ0LW1tLTkw/LmpwZw'},
-        {src: 'https://imgs.search.brave.com/lGwtK-HzlPJR1GsNTGRjhj84ithp80mvh0XcygkB4Lw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91aGR3/YWxscGFwZXJzLm9y/Zy91cGxvYWRzL2Nv/bnZlcnRlZC8xOC8x/MC8xNC9jaXR5LWxp/Z2h0cy1ieS1hc3Vz/LXJvZy13YWxscGFw/ZXItMjU2MHgxNDQw/XzU1NzQ0LW1tLTkw/LmpwZw'},
-        {src: 'https://imgs.search.brave.com/lGwtK-HzlPJR1GsNTGRjhj84ithp80mvh0XcygkB4Lw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly91aGR3/YWxscGFwZXJzLm9y/Zy91cGxvYWRzL2Nv/bnZlcnRlZC8xOC8x/MC8xNC9jaXR5LWxp/Z2h0cy1ieS1hc3Vz/LXJvZy13YWxscGFw/ZXItMjU2MHgxNDQw/XzU1NzQ0LW1tLTkw/LmpwZw'},
-    ];
-
+    
     return (
         <div>
             <Helmet>
@@ -30,11 +19,11 @@ const Gallery = () => {
         
             <div>
                 <Carousel>
-                    {Object.keys(pics).map((pic) => (
+                    {Object.keys(gallery).map((pic) => (
                             <Carousel.Item >
                                 <img className="d-block w-100"
-                                src= { pics[pic].src}
-                                alt="First slide" />
+                                src= { gallery[pic].src}
+                                alt="\unexCoder - _hypercubx Live A/v (2023)" />
                             {/* <Carousel.Caption>
                                 <h3>First slide label</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
