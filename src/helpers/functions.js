@@ -7,7 +7,7 @@ const staticCharCell = (start,str,url) => {
         const el = document.getElementById('id'+(start+i));
         el.classList.add('link')
         el.classList.remove('cell')
-        el.style.backgroundColor='black';
+        el.style.backgroundColor='#000';
         el.innerHTML = null;
         const link = document.createElement('a');
         link.style.color='#0f0';

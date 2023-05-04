@@ -6,14 +6,12 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#000000;
+  background-color:#000;
   overflow: hidden;
-  overscroll-behavior-y: contain;
-  overscroll-behavior-x: contain;
 }
 
 .App {
-  text-align: center;  
+  text-align: center;
 }
 
 .cell-container {
@@ -37,7 +35,7 @@ body {
 
 .cell {
   color:#ff00ff;
-  background-color: #3e3d42;
+  background-color: #202023;
   width: auto;
   flex: 1 2 40px;
 }
@@ -64,18 +62,29 @@ body {
 .social {
   display: flex;
   font-size: 3em;
-  padding: 4vw 2vw;
+  padding: 2vh 2vw;
+}
+
+.socialepk {
+  display: flex;
+  font-size: 1.5em;
+  padding: 2vh 2vw;
 }
 
 .socialLink {
   padding: 2vh 0.5vw;
   text-decoration: none;
-  color:#ff00ff;
+  color:#f0f;
+}
+.socialLinkepk {
+  padding: 0 0.5vw;
+  text-decoration: none;
+  color:#fff;
 }
 
 .button {
-  color:#ff00ff;
-  background-color:#000000;
+  color:#f0f;
+  background-color:#000;
   border: none;
   font-size: 1.5em;
 }
@@ -84,34 +93,73 @@ button:focus{font-weight:bold;}
 button:hover{cursor:pointer;}
 
 .navigate {
-  color:#ff00ff;
+  color:#f0f;
   font-size: 1em;
   padding: 1vh 2vw;
   text-align: left;
 }
 
 #root {
-  background-color: #000000;
+  background-color: #000;
 }
 html {
-  background-color: #000000;
+  background-color: #000;
 }
 
 #caption {
-  color:#ff00ff;
+  color:#f0f;
 }
+
+.presskit {
+  background-image: url('https://live.staticflickr.com/65535/52864651472_f6d24618d0_o.jpg');
+  background-size: 100vw 100vh;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.kitleft {
+  flex: 45%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.kitright {
+  flex: 55%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.innerkit {
+  padding: 2vh 1vw;
+  background-color: rgba(0,0,0,0.5);
+}
+
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   body {
-    overflow: auto;
+    overflow: scroll;
   }
-  
+
   .cell-container {
     margin-top: 1vh;
   }
 
   .socialLink {
     padding: 2vh 3vw;
+  }
+  
+  .socialLinkepk {
+    padding: 0 1.5vw;
+  }
+  
+  .presskit {
+    flex-direction: column;
+  }
+  .innerkit {
+    flex: 100%;
   }
 }
