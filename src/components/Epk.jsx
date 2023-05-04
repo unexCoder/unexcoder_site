@@ -79,7 +79,7 @@ const Epk = () => {
               <h1>_hypercubx A/V</h1>
               <p style={{textAlign:'left',fontSize:'1.25em'}}>{t('hyper')}</p>
               <div style={{color:'#fff',padding:'2vh'}}>
-                <iframe width="544vw" height='307vh' src="https://www.youtube.com/embed/TmbGAhIF0tE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className='videoframe'  src="https://www.youtube.com/embed/TmbGAhIF0tE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p>_hypercubx A/V (2023)</p>      
               </div>
             </div>

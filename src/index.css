@@ -137,6 +137,10 @@ html {
   background-color: rgba(0,0,0,0.5);
 }
 
+.videoframe {
+  width:544px;
+  height:307px;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -161,5 +165,10 @@ html {
   }
   .innerkit {
     flex: 100%;
+  }
+
+  .videoframe {
+    width:320px;
+    height:180px;
   }
 }
