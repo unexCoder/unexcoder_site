@@ -35,7 +35,7 @@ body {
 
 .cell {
   color:#ff00ff;
-  background-color: #202023;
+  background-color: #3e3d42;
   width: auto;
   flex: 1 2 40px;
 }
@@ -51,7 +51,7 @@ body {
 .content {
   padding: 2vh;
   height:100vh;
-  background-color:#000000;
+  background-color:#000;
   opacity:0.75;
 }
 
