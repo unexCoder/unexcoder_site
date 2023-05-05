@@ -31,11 +31,11 @@ const Home = () => {
         </div>        
 
         <div className='social'>
-            <a href="https://unexcoder.bandcamp.com" target="_blank" className='socialLink'><FaBandcamp /></a>
-            <a href="https://www.youtube.com/@unexcoder" target="_blank" className='socialLink'><FaYoutube /></a>
-            <a href="https://www.instagram.com/unexcoder/" target="_blank" className='socialLink'>< FaInstagram /></a>
-            <a href="https://twitter.com/unexCoder" target="_blank" className='socialLink'><FaTwitter /></a>
-            <a href="https://www.facebook.com/unexCoder" target="_blank" className='socialLink'><FaFacebook /></a>
+            <a href="https://unexcoder.bandcamp.com" target="_blank" className='socialLink' rel="noreferrer"><FaBandcamp /></a>
+            <a href="https://www.youtube.com/@unexcoder" target="_blank" className='socialLink' rel="noreferrer"><FaYoutube /></a>
+            <a href="https://www.instagram.com/unexcoder/" target="_blank" className='socialLink' rel="noreferrer">< FaInstagram /></a>
+            <a href="https://twitter.com/unexCoder" target="_blank" className='socialLink' rel="noreferrer"><FaTwitter /></a>
+            <a href="https://www.facebook.com/unexCoder" target="_blank" className='socialLink' rel="noreferrer"><FaFacebook /></a>
         </div>
     </div>
   );

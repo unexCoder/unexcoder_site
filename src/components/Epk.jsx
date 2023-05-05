@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet-async';
-import { Link} from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import lngs from '../data/lngs';
 import { FaBandcamp, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
@@ -43,8 +42,8 @@ const Epk = () => {
           <div className='innerkit'>
               <h1>{t('discography')}</h1>
               <div style={{display:'flex',justifyContent:'center'}}>
-                 <iframe style={{border:'0',width:'150px',height:'150px',padding:'10px'}} src="https://bandcamp.com/EmbeddedPlayer/album=961830835/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=false/" seamless><a href="https://unexcoder.bandcamp.com/album/unexcoder">\unexCoder by \unexCoder</a></iframe>
-                 <iframe style={{border:'0',width:'150px',height:'150px',padding:'10px'}} src="https://bandcamp.com/EmbeddedPlayer/album=205069946/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=false/" seamless><a href="https://unexcoder.bandcamp.com/album/rem">rem by \unexCoder</a></iframe>
+                 <iframe style={{border:'0',width:'150px',height:'150px',padding:'10px'}} src="https://bandcamp.com/EmbeddedPlayer/album=961830835/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=false/" seamless><a href="https://unexcoder.bandcamp.com/album/unexcoder" title='\unexCoder'>\unexCoder by \unexCoder</a></iframe>
+                 <iframe style={{border:'0',width:'150px',height:'150px',padding:'10px'}} src="https://bandcamp.com/EmbeddedPlayer/album=205069946/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=false/" seamless><a href="https://unexcoder.bandcamp.com/album/rem" title='rem'>rem by \unexCoder</a></iframe>
               </div>
           </div>
           <div className='innerkit'>
@@ -66,11 +65,11 @@ const Epk = () => {
             <div className='innerkit'>
               <h1>{t('network')}</h1>
               <div style={{fontSize:'2em',display:'flex',justifyContent:'center'}}>
-                  <a href="https://unexcoder.bandcamp.com" target="_blank" className='socialLinkepk'><FaBandcamp /></a>
-                  <a href="https://www.youtube.com/@unexcoder" target="_blank" className='socialLinkepk'><FaYoutube /></a>
-                  <a href="https://www.instagram.com/unexcoder/" target="_blank" className='socialLinkepk'>< FaInstagram /></a>
-                  <a href="https://twitter.com/unexCoder" target="_blank" className='socialLinkepk'><FaTwitter /></a>
-                  <a href="https://www.facebook.com/unexCoder" target="_blank" className='socialLinkepk'><FaFacebook /></a>
+                  <a href="https://unexcoder.bandcamp.com" target="_blank" className='socialLinkepk' rel="noreferrer"><FaBandcamp /></a>
+                  <a href="https://www.youtube.com/@unexcoder" target="_blank" className='socialLinkepk' rel="noreferrer"><FaYoutube /></a>
+                  <a href="https://www.instagram.com/unexcoder/" target="_blank" className='socialLinkepk' rel="noreferrer">< FaInstagram /></a>
+                  <a href="https://twitter.com/unexCoder" target="_blank" className='socialLinkepk' rel="noreferrer"><FaTwitter /></a>
+                  <a href="https://www.facebook.com/unexCoder" target="_blank" className='socialLinkepk' rel="noreferrer"><FaFacebook /></a>
               </div>
             </div>
           </div>
@@ -99,7 +98,7 @@ const Epk = () => {
         
         <div style={{display:'flex',justifyContent:'space-between'}}>
           <div style={{padding:'1vh',color:'#fff',fontSize:'2em'}}>
-              <a href="mailto:bosca.music@gmail.com" target="_blank" className='socialLinkepk'><AiOutlineMail /></a><span><a style={{textDecoration:'none',fontSize:'0.5em',color:'#fff'}} href="mailto:bosca.music@gmail.com">bosca.music@gmail.com</a></span>
+              <a href="mailto:bosca.music@gmail.com" target="_blank" className='socialLinkepk' rel="noreferrer"><AiOutlineMail /></a><span><a style={{textDecoration:'none',fontSize:'0.5em',color:'#fff'}} href="mailto:bosca.music@gmail.com">bosca.music@gmail.com</a></span>
           </div>         
           <div style={{padding:'2vh'}}>
               {Object.keys(lngs).map((lng) => (
