@@ -42,8 +42,8 @@ const Epk = () => {
           <div className='innerkit'>
               <h1>{t('discography')}</h1>
               <div style={{display:'flex',justifyContent:'center'}}>
-                 <iframe style={{border:'0',width:'150px',height:'150px',padding:'10px'}} src="https://bandcamp.com/EmbeddedPlayer/album=961830835/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=false/" seamless><a href="https://unexcoder.bandcamp.com/album/unexcoder" title='\unexCoder'>\unexCoder by \unexCoder</a></iframe>
-                 <iframe style={{border:'0',width:'150px',height:'150px',padding:'10px'}} src="https://bandcamp.com/EmbeddedPlayer/album=205069946/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=false/" seamless><a href="https://unexcoder.bandcamp.com/album/rem" title='rem'>rem by \unexCoder</a></iframe>
+                 <iframe style={{border:'0',width:'150px',height:'150px',padding:'10px'}} src="https://bandcamp.com/EmbeddedPlayer/album=961830835/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=false/" seamless title='\unexCoder (2017)'><a href="https://unexcoder.bandcamp.com/album/unexcoder">\unexCoder by \unexCoder</a></iframe>
+                 <iframe style={{border:'0',width:'150px',height:'150px',padding:'10px'}} src="https://bandcamp.com/EmbeddedPlayer/album=205069946/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=false/" seamless title='rem (2019)'><a href="https://unexcoder.bandcamp.com/album/rem">rem by \unexCoder</a></iframe>
               </div>
           </div>
           <div className='innerkit'>
@@ -78,7 +78,7 @@ const Epk = () => {
               <h1>_hypercubx A/V</h1>
               <p style={{textAlign:'left',fontSize:'1.25em'}}>{t('hyper')}</p>
               <div style={{color:'#fff',padding:'2vh'}}>
-                <iframe className='videoframe'  src="https://www.youtube.com/embed/TmbGAhIF0tE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className='videoframe'  src="https://www.youtube.com/embed/TmbGAhIF0tE" title="\unexCoder Youtube Channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p>_hypercubx A/V (2023)</p>      
               </div>
             </div>
