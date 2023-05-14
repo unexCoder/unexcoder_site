@@ -10,7 +10,7 @@ i18next
                 translation: {
                     gallery:'Gallery',
                     tour:'Tour',
-                    about:'\\unexCoder is a composer and computer artist from Argentina. He use programming languages to develops and builds hybrid performance systems that combine live coded algorithms with analog devices and computer generated graphics. His audiovisual pieces push the viewer into a deep abstract volumetric aural and visual experience. He has performed in festivals and concerts in Argentina, Spain, Germany, France and Netherlands',
+                    about:'\\unexCoder is a composer and computer artist from Argentina. He use programming languages to develop and build hybrid performance systems that combine live coded algorithms with analog devices and computer generated graphics. His audiovisual pieces push the viewer into a deep abstract volumetric aural and visual experience. He has performed in festivals and concerts in Argentina, Spain, Germany, France and Netherlands',
                     network:'Network',
                     discography:'Discography',
                     hyper:'_hypercubx exists between a mathematical dimension and the singularity of its volumetric projection . The algorithmic flow models numerical meta-forms into sculptures of sound and light. The system is hacked in performance to break structures and highlight noise',
