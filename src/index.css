@@ -10,6 +10,10 @@ body {
   overflow: hidden;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .App {
   text-align: center;
 }

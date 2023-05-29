@@ -4,7 +4,6 @@ import Gallery from './components/Gallery';
 import Epk from './components/Epk';
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 
-
 function App() {
   return (
     <Router>
