@@ -1,5 +1,5 @@
 const randomChar = () => {
-    return String.fromCharCode(Math.random()*(2**7));
+    return String.fromCharCode(Math.random()*(2**6));
 }
 
 const staticCharCell = (start,str,url) => {

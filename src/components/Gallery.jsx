@@ -17,17 +17,13 @@ const Gallery = () => {
                     crossorigin="anonymous"/>
             </Helmet>
         
-            <div>
+            <div id='gallery'>
                 <Carousel>
                     {Object.keys(gallery).map((pic) => (
-                            <Carousel.Item >
-                                <img className="d-block w-100"
+                        <Carousel.Item className='item'>
+                            <img className="d-block w-100"
                                 src= { gallery[pic].src}
                                 alt="\unexCoder - _hypercubx Live A/v (2023)" />
-                            {/* <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption> */}
                         </Carousel.Item>                
                     ))}
                 </Carousel>

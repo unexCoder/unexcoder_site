@@ -9,13 +9,14 @@ const Cell = (props) => {
     const size = useWindowSize();
     // const cellW = 40;
     const cellW = props.cellW;
-    console.log(size);
+    // console.log(size);
     const numCells = Math.round((size.width/cellW)*(size.height/cellW));
     const orientation = size.width > size.height ? true : false;
-    const linkPos = orientation ? [0.135,0.275,0.405,0.585] : [0.135,0.39,0.6,0.86];
+    const linkPos = orientation ? [0.135,0.285,0.43,0.575] : [0.135,0.39,0.6,0.86];
     const tube = 'https://www.youtube.com/channel/UClEoTMrqLGcBSXn6Jl5KB6A';
     const bandcamp = 'https://unexcoder.bandcamp.com/';
     const github = 'https://github.com/unexCoder';
+
     useEffect(() => {
         if(numCells > 0) {
             staticCharCell(Math.floor(numCells*linkPos[0]),'\\unexCoder','/home'); 
@@ -23,6 +24,7 @@ const Cell = (props) => {
             staticCharCell(Math.floor(numCells*linkPos[2]),'a/visuals',tube); 
             staticCharCell(Math.floor(numCells*linkPos[3]),'*code',github); 
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[numCells]);
     
     // Event handler utilizing useCallback

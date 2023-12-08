@@ -2,6 +2,7 @@ import Cell from './components/Cell';
 import Home from './components/Home';
 import Gallery from './components/Gallery';
 import Epk from './components/Epk';
+import Tour from './components/Tour';
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path='/' element={<Cell cellW="40"/>} />
           <Route path='/home' element={( <Home /> )} />
           <Route path='/gallery' element={( <Gallery /> )} />
+          <Route path='/tour' element={( <Tour /> )} />
           <Route path='/epk' element={(<Epk/>)} />
           <Route path='*' element={(
             // <NotFound />

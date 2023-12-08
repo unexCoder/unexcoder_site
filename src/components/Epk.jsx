@@ -65,11 +65,11 @@ const Epk = () => {
             <div className='innerkit'>
               <h1>{t('network')}</h1>
               <div style={{fontSize:'2em',display:'flex',justifyContent:'center'}}>
-                  <a href="https://unexcoder.bandcamp.com" target="_blank" className='socialLinkepk' rel="noreferrer"><FaBandcamp /></a>
-                  <a href="https://www.youtube.com/@unexcoder" target="_blank" className='socialLinkepk' rel="noreferrer"><FaYoutube /></a>
-                  <a href="https://www.instagram.com/unexcoder/" target="_blank" className='socialLinkepk' rel="noreferrer">< FaInstagram /></a>
-                  <a href="https://twitter.com/unexCoder" target="_blank" className='socialLinkepk' rel="noreferrer"><FaTwitter /></a>
-                  <a href="https://www.facebook.com/unexCoder" target="_blank" className='socialLinkepk' rel="noreferrer"><FaFacebook /></a>
+                  <a href="https://unexcoder.bandcamp.com" target="_blank" className='socialLinkepk' rel="noreferrer"><FaBandcamp size={30} /></a>
+                  <a href="https://www.youtube.com/@unexcoder" target="_blank" className='socialLinkepk' rel="noreferrer"><FaYoutube size={30}/></a>
+                  <a href="https://www.instagram.com/unexcoder/" target="_blank" className='socialLinkepk' rel="noreferrer">< FaInstagram size={30}/></a>
+                  <a href="https://twitter.com/unexCoder" target="_blank" className='socialLinkepk' rel="noreferrer"><FaTwitter size={30}/></a>
+                  <a href="https://www.facebook.com/unexCoder" target="_blank" className='socialLinkepk' rel="noreferrer"><FaFacebook size={30}/></a>
               </div>
             </div>
           </div>

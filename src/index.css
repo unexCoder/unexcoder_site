@@ -1,13 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800;900&display=swap');
+
+#root {
+  background-color: #000;
+}
+
+html {
+  background-color: #000;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter';
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color:#000;
   overflow: hidden;
+
 }
 
 body::-webkit-scrollbar{
@@ -19,7 +31,8 @@ body::-webkit-scrollbar{
 }
 
 .cell-container {
-  background-color: #3e3d42;
+  /* background-color: #3e3d42; */
+  background-color: rgb(30,5,90);
   position: fixed;
   display:flex;
   flex-direction: row;
@@ -34,12 +47,15 @@ body::-webkit-scrollbar{
   width: 40px;
   height: 40px;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 400;
 } 
 
 .cell {
   color:#ff00ff;
-  background-color: #3e3d42;
+  /* background-color: #000; */
+  /* background-color: #3e3d42; */
+  background-color: rgb(30,5,40);
+  /* background-color: #0B060D; */
   width: auto;
   flex: 1 2 40px;
 }
@@ -55,12 +71,18 @@ body::-webkit-scrollbar{
 .content {
   padding: 2vh;
   height:100vh;
-  background-color:#000;
-  opacity:0.75;
+  /* opacity:0.75; */
+  background-color: rgb(30,5,40);
 }
 
 .content h1 {
+  font-family: 'Inter';
+  font-weight: 500;
   margin:0;
+}
+.content p {
+  font-size: 2em;
+  font-weight: 500;
 }
 
 .social {
@@ -98,23 +120,24 @@ button:hover{cursor:pointer;}
 
 .navigate {
   color:#f0f;
-  font-size: 1em;
   padding: 1vh 2vw;
   text-align: left;
 }
 
-#root {
-  background-color: #000;
-}
-html {
-  background-color: #000;
+.navigate h2 {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 2em;
+  font-weight: 500;
 }
 
 #caption {
+  font-family: 'Inter';
   color:#f0f;
 }
 
 .presskit {
+  font-family: 'Inter';
   background-image: url('https://live.staticflickr.com/65535/52864651472_f6d24618d0_o.jpg');
   background-size: 100vw 100vh;
   display: flex;
@@ -146,16 +169,43 @@ html {
   height:307px;
 }
 
+.tourdates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#ff00ff;
+  /* font-size:2em; */
+  /* font-weight:600; */
+}
+
+#gallery {
+  background-color: rgb(30,5,40);
+}
+
+#gallery img {
+  background-color: rgb(30,5,40);
+  height: 97vh;
+}
+
+.tour {
+  font-size: 1em;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   body {
     overflow: scroll;
   }
-
+  
   .cell-container {
     margin-top: 1vh;
   }
 
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .socialLink {
     padding: 2vh 3vw;
   }
@@ -174,5 +224,26 @@ html {
   .videoframe {
     width:320px;
     height:180px;
+  }
+
+  .tourdates {
+    flex-direction: column;
+  }
+  #gallery carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #gallery img {
+    background-color: rgb(30,5,40);
+    height: auto;
+  }
+  .content {
+   height: auto;
+  }
+
+  .tour { 
+    font-size: 0.85em;
   }
 }
