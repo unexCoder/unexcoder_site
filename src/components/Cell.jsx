@@ -20,8 +20,8 @@ const Cell = (props) => {
     useEffect(() => {
         if(numCells > 0) {
             staticCharCell(Math.floor(numCells*linkPos[0]),'\\unexCoder','/home'); 
-            staticCharCell(Math.floor(numCells*linkPos[1]),'albums_',bandcamp); 
-            staticCharCell(Math.floor(numCells*linkPos[2]),'a/visuals',tube); 
+            staticCharCell(Math.floor(numCells*linkPos[1]),'albums_',bandcamp);
+            staticCharCell(Math.floor(numCells*linkPos[2]),'a/visuals','hypercubx'); 
             staticCharCell(Math.floor(numCells*linkPos[3]),'*code',github); 
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps

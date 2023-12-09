@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Gallery from './components/Gallery';
 import Epk from './components/Epk';
 import Tour from './components/Tour';
+import Hypercubx from './components/Hypercubx';
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/gallery' element={( <Gallery /> )} />
           <Route path='/tour' element={( <Tour /> )} />
           <Route path='/epk' element={(<Epk/>)} />
+          <Route path='/hypercubx' element={(<Hypercubx/>)} />
           <Route path='*' element={(
             // <NotFound />
             <div className='content'>    
