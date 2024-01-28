@@ -27,7 +27,7 @@ const Gallery = () => {
                         </Carousel.Item>                
                     ))}
                 </Carousel>
-                <p id='caption'>_hypercubx a/v (2023)</p>
+                <p id='caption' style={{fontSize:'1em'}}>_hypercubx a/v (2023)</p>
             </div>
         </div>
   );

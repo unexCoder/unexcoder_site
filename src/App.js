@@ -4,12 +4,14 @@ import Gallery from './components/Gallery';
 import Epk from './components/Epk';
 import Tour from './components/Tour';
 import Hypercubx from './components/Hypercubx';
+import Workshop from './components/Workshop';
+
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 
 function App() {
   return (
     <Router>
-      <main className="container"> 
+      <main> 
         <div className="App">
         <Routes>
           <Route path='/' element={<Cell cellW="40"/>} />
@@ -18,6 +20,7 @@ function App() {
           <Route path='/tour' element={( <Tour /> )} />
           <Route path='/epk' element={(<Epk/>)} />
           <Route path='/hypercubx' element={(<Hypercubx/>)} />
+          <Route path='/workshop' element={(<Workshop/>)} />
           <Route path='*' element={(
             // <NotFound />
             <div className='content'>    

@@ -34,10 +34,10 @@ const Hypercubx = () => {
             <a href="https://www.youtube.com/@unexcoder" target="_blank" rel="noreferrer">                   
                 <div className="container">            
                     <div className="gifcontainer">
-                        <div><img src={gif02} alt="hypercube" /></div>
+                        <div><img src={gif01} alt="hypercube" /></div>
                         <div><img src={gif04} alt="hypercube" /></div>
                         <div><img src={gif06} alt="hypercube" /></div>
-                        <div><img src={gif01} alt="hypercube" /></div>
+                        <div><img src={gif02} alt="hypercube" /></div>
                         <div><img src={gif03} alt="hypercube" /></div>
                         <div><img src={gif09} alt="hypercube" /></div>
                         <div><img src={gif10} alt="hypercube" /></div>
