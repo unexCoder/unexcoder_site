@@ -50,7 +50,7 @@
 
     .imageCont img {
       object-fit: cover;
-      object-position: -300px 20px;
+      object-position: -400px 20px;
     }
     
     .offset img {
