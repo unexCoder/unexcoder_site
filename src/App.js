@@ -5,6 +5,7 @@ import Epk from './components/Epk';
 import Tour from './components/Tour';
 import Hypercubx from './components/Hypercubx';
 import Workshop from './components/Workshop';
+import Workshop2 from './components/Workshop2';
 
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/epk' element={(<Epk/>)} />
           <Route path='/hypercubx' element={(<Hypercubx/>)} />
           <Route path='/workshop' element={(<Workshop/>)} />
+          <Route path='/supercollider' element={(<Workshop2/>)} />
           <Route path='*' element={(
             // <NotFound />
             <div className='content'>    

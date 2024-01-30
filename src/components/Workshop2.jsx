@@ -14,7 +14,7 @@ const Workshop = () => {
   return (
     <div>
         <Helmet>
-            <title>Modular Livecoding Workshop</title>
+            <title>Supercollider Workshop</title>
             <meta  name='description' content='The official \unexCoder source code repo and web app.'/>
             <meta  name='keywords' content='electronic,audiovisual,algorithmic,performance,art,live code,idm,ambient,techno,noise,experimental,\unexCoder,unexcoder,music,generative art,algorithmic art,math art'/>
             <link rel="canonical" href="/" />
@@ -34,23 +34,23 @@ const Workshop = () => {
               </div>  
           </div>
           <div className='wshopBody'>
-            <div className="imageCont offset">
-              <img src= { gallery[25].src} alt="Livecode Modular Workshop"/>
+            <div className="imageCont">
+              <img src= { gallery[10].src} alt="Supercollider Workshop" />
             </div>
             <h6 style={{paddingTop:'5px'}} >{t('workshop').toUpperCase()}</h6>
-            <h1>{t('wshopTitle')}</h1>
-            <p style={{lineHeight:'24px'}} >{t('wshopAbout')}</p>
+            <h1>{t('wshopTitle2')}</h1>
+            <p style={{lineHeight:'24px'}} >{t('wshopAbout2')}</p>
             <h4>{t('summary')}</h4>
             <ul>
-              <li>{t('sum_1')}</li>
-              <li>{t('sum_2')}</li>
               <li>{t('sum_3')}</li>
               <li>{t('sum_4')}</li>
               <li>{t('sum_5')}</li>
-              <li>{t('sum_6')}</li>
-              <li>{t('sum_7')}</li>
-              <li>{t('sum_8')}</li>
+              <li>{t('sum_62')}</li>
               <li>{t('sum_9')}</li>
+              <li>{t('sum_12')}</li>
+              <li>{t('sum_7')}</li>
+              <li>{t('sum_11')}</li>
+              <li>{t('sum_8')}</li>
               <li>{t('sum_10')}</li>
             </ul>
             <h5 style={{fontSize:'1em'}}>{t('luigi').toUpperCase()}</h5>

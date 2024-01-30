@@ -1,7 +1,7 @@
 .workshopContainer {
     font-family: 'Inter';
     background-color: #333;
-    margin: 0 0.5vw;
+    /* margin: 0 0.5vw; */
     padding: 0;
     text-align: left;
     color: #fff;
@@ -14,19 +14,19 @@
     width: 100vw;
     text-align: right;
     margin:0;
-    padding: 0 1vw;
+    padding: 0 10px;
     z-index: 2;
   }
   
   .wshopBody {
     background-color: #222;
-    position: relative;
-    top: -190px;
+    /* position: relative; */
+    /* top: -190px; */
     max-height: 100%;
   }
 
   h1,h4,h5,h6,p {
-    padding:0 5px;
+    padding:0 10px;
   }
   p {
     font-size: 1.4em;
@@ -36,3 +36,28 @@
     font-weight: 700;
     list-style-type: '> ';
   }
+  
+  .imageCont {
+    width: 100vw;
+    height: 82vh;    
+  }
+  
+  img {
+    object-fit: cover;
+    object-position: 0 -100px;
+  }
+  @media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .imageCont{
+      height: 67vh;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: -400px 20px;
+    }
+    
+    .offset img {
+      object-position: -100px 25px;
+    }
+}
