@@ -42,22 +42,19 @@
     height: 82vh;    
   }
   
-  img {
-    object-fit: cover;
-    object-position: 0 -100px;
-  }
   @media only screen and (max-width: 600px) {
     /* For mobile phones: */
     .imageCont{
       height: 67vh;
     }
 
-    img {
+    .imageCont img {
       object-fit: cover;
-      object-position: -400px 20px;
+      object-position: -300px 20px;
     }
     
     .offset img {
+      object-fit: cover;
       object-position: -100px 25px;
     }
 }
