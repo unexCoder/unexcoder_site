@@ -188,6 +188,7 @@ button:hover{cursor:pointer;}
 }
 
 .tour {
+  background-color:#000;
   font-size: 1em;
 }
 

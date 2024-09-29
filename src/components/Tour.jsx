@@ -10,7 +10,9 @@ const Tour = () => {
                 <title>\unexCoder | Tour</title>
                 <meta  name='description' content='The official \unexCoder source code repo and web app.'/>
                 <meta  name='keywords' content='electronic,audiovisual,algorithmic,performance,art,live code,idm,ambient,techno,noise,experimental,\unexCoder,unexcoder,music,generative art,algorithmic art,math art'/>
-                <link rel="canonical" href="/" />              
+                <link rel="canonical" href="/" />
+                <style type="text/css">{`body {overflow:scroll;overflow-x: hidden; }`}</style>       
+                <style type="text/css">{`.content {background-color:#000; }`}</style>       
             </Helmet>
 
             <div className='tour'>
