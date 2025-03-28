@@ -78,7 +78,7 @@ const Cell = (props) => {
             </Helmet>
             <h1 className='hidden'>\unexCoder Art Web App</h1>
             {[...Array(numCells)].map((x, i) =>
-                <p id={'id'+i} key={i} className="cell" onMouseMove={(e) => mouseHoverDesktop(e)}>\</p>
+                <p id={'id'+i} key={i} className="cell" onMouseMove={(e) => mouseHoverDesktop(e)}></p>
             )}
         </div>
       );
