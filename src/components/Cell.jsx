@@ -13,7 +13,6 @@ const Cell = (props) => {
     const numCells = Math.round((size.width/cellW)*(size.height/cellW));
     const orientation = size.width > size.height ? true : false;
     const linkPos = orientation ? [0.115,0.285,0.42,0.627] : [0.135,0.39,0.6,0.86];
-    const tube = 'https://www.youtube.com/channel/UClEoTMrqLGcBSXn6Jl5KB6A';
     const bandcamp = 'https://unexcoder.bandcamp.com/';
     const github = 'https://github.com/unexCoder';
 
